@@ -153,12 +153,14 @@
     </fields>
     <fields>
         <fullName>Macaron_Flavor__c</fullName>
+        <defaultValue>CASE(MONTH(TODAY()),1, "Gingerbread",2, "Strawberry",4, "Chocolate",7, "Raspberry",11, "Pumpkin",12, "Mint", "Vanilla")</defaultValue>
         <externalId>false</externalId>
         <label>Macaron Flavor</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Gluten_Free__c</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -198,6 +200,36 @@
                     <label>Vanilla</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Gingerbread</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Strawberry</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Chocolate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Raspberry</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Pumpkin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Mint</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Vanilla</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
