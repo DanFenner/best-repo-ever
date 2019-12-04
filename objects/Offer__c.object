@@ -140,39 +140,47 @@
         <type>Default</type>
     </actionOverrides>
     <fields>
-        <fullName>Property__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Property</label>
-        <referenceTo>Property__c</referenceTo>
-        <relationshipLabel>Favorites</relationshipLabel>
-        <relationshipName>Favorites</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>User__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>User</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Favorites</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Contact__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
         <label>Contact</label>
         <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Favorites</relationshipLabel>
-        <relationshipName>Favorites</relationshipName>
+        <relationshipLabel>Offer</relationshipLabel>
+        <relationshipName>Offer1</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Offer_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Offer Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Property__c</referenceTo>
+        <relationshipLabel>Offer</relationshipLabel>
+        <relationshipName>Offer</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Target_Close_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Close Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -183,24 +191,17 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Favorite</label>
+    <label>Offer</label>
     <nameField>
-        <displayFormat>F-{00000000}</displayFormat>
-        <label>Favorite Name</label>
+        <displayFormat>OF-{0000}</displayFormat>
+        <label>Offer Name</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Favorites</pluralLabel>
+    <pluralLabel>Offer</pluralLabel>
     <searchLayouts />
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
-    <listViews>
-        <fullName>All</fullName>
-        <columns>NAME</columns>
-        <columns>Property__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
 </CustomObject>

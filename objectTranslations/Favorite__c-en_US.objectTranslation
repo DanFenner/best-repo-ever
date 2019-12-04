@@ -9,6 +9,11 @@
         <name>User__c</name>
         <relationshipLabel><!-- Favorites --></relationshipLabel>
     </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Favorites --></relationshipLabel>
+    </fields>
     <caseValues>
         <plural>false</plural>
         <value>Favorite</value>

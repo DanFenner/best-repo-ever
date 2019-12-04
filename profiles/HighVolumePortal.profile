@@ -1619,6 +1619,12 @@
     <layoutAssignments>
         <layout>WorkThanks-Thanks Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Favourite__c-Favourite Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Offer__c-Offer Layout</layout>
+    </layoutAssignments>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.Customer_Account</recordType>

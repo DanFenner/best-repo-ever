@@ -162,44 +162,7 @@
         <valueSet>
             <controllingField>Gluten_Free__c</controllingField>
             <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Gingerbread</fullName>
-                    <default>false</default>
-                    <label>Gingerbread</label>
-                </value>
-                <value>
-                    <fullName>Strawberry</fullName>
-                    <default>false</default>
-                    <label>Strawberry</label>
-                </value>
-                <value>
-                    <fullName>Chocolate</fullName>
-                    <default>false</default>
-                    <label>Chocolate</label>
-                </value>
-                <value>
-                    <fullName>Raspberry</fullName>
-                    <default>false</default>
-                    <label>Raspberry</label>
-                </value>
-                <value>
-                    <fullName>Pumpkin</fullName>
-                    <default>false</default>
-                    <label>Pumpkin</label>
-                </value>
-                <value>
-                    <fullName>Mint</fullName>
-                    <default>false</default>
-                    <label>Mint</label>
-                </value>
-                <value>
-                    <fullName>Vanilla</fullName>
-                    <default>false</default>
-                    <label>Vanilla</label>
-                </value>
-            </valueSetDefinition>
+            <valueSetName>Flavors</valueSetName>
             <valueSettings>
                 <controllingFieldValue>unchecked</controllingFieldValue>
                 <valueName>Gingerbread</valueName>

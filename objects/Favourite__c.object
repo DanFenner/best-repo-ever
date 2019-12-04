@@ -140,39 +140,12 @@
         <type>Default</type>
     </actionOverrides>
     <fields>
-        <fullName>Property__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
+        <fullName>Favourite_Name__c</fullName>
+        <displayFormat>FA-{0000}</displayFormat>
         <externalId>false</externalId>
-        <label>Property</label>
-        <referenceTo>Property__c</referenceTo>
-        <relationshipLabel>Favorites</relationshipLabel>
-        <relationshipName>Favorites</relationshipName>
-        <required>false</required>
+        <label>Favourite Name</label>
         <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>User__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>User</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Favorites</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Contact__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Contact</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Favorites</relationshipLabel>
-        <relationshipName>Favorites</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
+        <type>AutoNumber</type>
     </fields>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
@@ -183,24 +156,16 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Favorite</label>
+    <label>Favourite</label>
     <nameField>
-        <displayFormat>F-{00000000}</displayFormat>
-        <label>Favorite Name</label>
-        <type>AutoNumber</type>
+        <label>Favourite Name</label>
+        <type>Text</type>
     </nameField>
-    <pluralLabel>Favorites</pluralLabel>
+    <pluralLabel>Favourites</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
-    <listViews>
-        <fullName>All</fullName>
-        <columns>NAME</columns>
-        <columns>Property__c</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
 </CustomObject>
